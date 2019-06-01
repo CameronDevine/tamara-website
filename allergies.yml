@@ -1,0 +1,37 @@
+name: Tamara
+allergies:
+  Vegetables:
+    - Onion: Cooked scallions and a small amount of onion powder are fine.
+    - Spinach
+    - Sweet Potato
+    - Corn: Including corn starch and corn syrup.
+  Meat:
+    - Pork
+    - Beef
+    - Lamb
+    - Venison
+    - Turkey
+  Grains:
+    - Wheat
+    - Corn: Consider replacing corn starch with tapioca flour.
+    - Oats
+    - Spelt
+  Dairy:
+    - Milk: Cheese is fine.
+    - Yogurt
+  Spices:
+    - Nutmeg: A sprinkle here or there is fine.
+    - Cinnamon: A sprinkle here or there is fine.
+    - Paprika: A sprinkle here or there is fine.
+    - Mustard: Can tolerate none.
+  Legumes:
+    - Walnuts
+    - Beans: Peas and green beans are fine.
+    - Soy: Consider using cooked coconut aminos, and soy lecithin is fine.
+  Fruits:
+    - Cherry
+    - Apricot
+    - Coconut: Can tolerate small amounts of cooked coconut aminos.
+  Other:
+    - "Blue #1": Usually found in marshmallows.
+    - Alcohol
