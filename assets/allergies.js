@@ -81,7 +81,7 @@ function startApp(yaml) {
 		el: "#app",
 		data: jsyaml.safeLoad(yaml),
 		mounted() {
-			this.fit();
+			this.start_fit();
 			search_el = document.getElementById('search-field');
 			search_el.addEventListener('keydown', this.search);
 			search_el.addEventListener('change', this.search);
@@ -91,7 +91,7 @@ function startApp(yaml) {
 			})
 		},
 		created() {
-			window.onresize = this.fit;
+			window.onresize = this.start_fit;
 			this.comp = jsyaml.safeLoad(yaml).allergies;
 			this.index = elasticlunr(function () {
 				this.addField('category');
@@ -130,6 +130,17 @@ function startApp(yaml) {
 					}
 				}, 0);
 			},
+			start_fit: function() {
+				cards = document.getElementById('cards');
+				if (Math.floor(cards.scrollWidth) <= 2 * this.cardWidth) {
+					console.log('undefined');
+					cards.style.height = undefined;
+				} else {
+					cards.style.height = 100 + 'px';
+					console.log(cards.style.height);
+					setTimeout(this.fit, 0);
+				}
+			},
 			fit: function() {
 				cards = document.getElementById('cards');
 				scrollWidth = cards.scrollWidth / this.cardWidth;
@@ -137,16 +148,27 @@ function startApp(yaml) {
 				clientHeight = cards.clientHeight;
 				overflowWidth = 2 * (scrollWidth - clientWidth);
 				if(overflowWidth > 0) {
-					cards.style.height = clientHeight + 100 + 'px'
-				} else {
-					cards.style.height = clientHeight - 100 + 'px';
+					if (overflowWidth > 1) {
+						cards.style.height = Math.min(clientHeight * Math.floor(overflowWidth) / Math.floor(clientWidth), 2000) + clientHeight + 'px';
+					} else {
+						cards.style.height = clientHeight + 100 + 'px';
+					}
 					setTimeout(this.fit, 0);
+				} else {
+					maxChildHeight = 0;
+					Array.prototype.slice.call(cards.children).forEach(function(el) {
+						maxChildHeight = Math.max(el.clientHeight, maxChildHeight);
+					});
+					if (clientHeight <= maxChildHeight + 20) {
+						cards.style.height = clientHeight + 100 + 'px';
+						setTimeout(this.fit, 0);
+					}
 				}
 			}
 		},
 		watch: {
 			allergies: function() {
-				this.fit();
+				this.start_fit();
 			}
 		},
 		template: `
