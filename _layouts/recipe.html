@@ -1,5 +1,29 @@
 ---
-layout: default
+layout: post
 ---
 
 {{ content }}
+
+<h5>Ingredients</h5>
+
+<ul class="mdl-list">
+  {% for ingredient in page.ingredients %}
+    <li class="mdl-list__item">
+      <span class="mdl-list__item-primary">
+        {{ ingredient }}
+      </span>
+    </li>
+  {% endfor %}
+</ul>
+
+<h5>Instructions</h5>
+
+<ul class="mdl-list">
+  {% for instruction in page.instructions %}
+    <li class="mdl-list__item">
+      <span class="mdl-list__item-primary">
+        {{ forloop.index }}. {{ instruction }}
+      </span>
+    </li>
+  {% endfor %}
+</ul>
