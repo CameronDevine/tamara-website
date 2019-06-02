@@ -35,3 +35,5 @@ fields:
   hidden: false
   config:
     required: true
+pages:
+- _posts/waffles.md
