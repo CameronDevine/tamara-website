@@ -3,8 +3,10 @@ layout: default
 title: Recipies
 ---
 
+{% assign sortedPosts = site.posts | sort: 'title' %}
+
 <div class="mdl-grid" style="max-width:10in">
-  {% for post in site.posts %}
+  {% for post in sortedPosts %}
     <div class="mdl-cell mdl-cell--4-col">
       <div class="mdl-card mdl-shadow--2dp" style="width:100%">
         <div class="mdl-card__title" style="height:200px">
