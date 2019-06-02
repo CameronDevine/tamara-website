@@ -36,4 +36,4 @@ fields:
   config:
     required: true
 pages:
-- _posts/waffles.md
+- _posts/2019-06-02-waffles.md
