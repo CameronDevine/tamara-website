@@ -17,4 +17,4 @@ instructions:
 date: 2019-06-01 17:30:00 -0700
 ---
 
-We found this recipe at a restaurant in Redmond and decided we needed to try to make them ourselves. These are a great for snacking.
+We found out about this bread at a restaurant in Redmond and decided we needed to try to make them ourselves. These make a great snack or addition to many meals.
