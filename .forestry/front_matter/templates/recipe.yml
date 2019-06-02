@@ -4,16 +4,34 @@ hide_body: false
 fields:
 - type: text
   name: layout
-  label: layout
+  label: Layout
+  hidden: true
+  default: recipe
+  config:
+    required: true
+  description: Layout to use
 - type: text
   name: title
-  label: title
+  label: Title
+  description: Recipe title
+  config:
+    required: true
 - type: list
   name: ingredients
-  label: ingredients
+  label: Ingredients
+  description: Recipe ingredients
 - type: list
   name: instructions
-  label: instructions
+  label: Instructions
+  description: Recipe instructions
+  config:
+    use_select: false
+    source:
+      type: simple
 - type: datetime
   name: date
-  label: date
+  label: Date
+  default: now
+  hidden: false
+  config:
+    required: true
