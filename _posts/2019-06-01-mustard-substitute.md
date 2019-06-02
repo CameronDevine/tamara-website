@@ -2,12 +2,12 @@
 layout: recipe
 title: Mustard Substitute
 ingredients:
-  - 4 Tbsp tahini
-  - 3 Tbsp white vinegar
-  - 1 Tbsp water
-  - 1 Tbsp turmeric
-  - 1/4 tsp garlic powder
-  - 1/8 tsp paprika
+  - 4 tablespoons of tahini
+  - 3 tablespoons of white vinegar
+  - 1 tablespoon of water
+  - 1 tablespoon of turmeric
+  - 1/4 teaspoon of garlic powder
+  - 1/8 teaspoon of paprika
 instructions:
   - Mix all ingredients until well combined
 date: 2019-06-01 21:15:00 -0700

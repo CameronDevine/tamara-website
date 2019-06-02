@@ -3,11 +3,11 @@ layout: recipe
 title: Brazilian Cheese Bread
 ingredients:
   - 1 large egg
-  - 1/3 cup olive oil
-  - 2/3 cup milk
-  - 1 1/2 cups tapioca flour
-  - 1/2 cup cheese (grated or cubed)
-  - 1 teaspoon salt
+  - 1/3 cup of olive oil
+  - 2/3 cup of milk
+  - 1 1/2 cups of tapioca flour
+  - 1/2 cup of cheese (grated or cubed)
+  - 1 teaspoon of salt
 instructions:
   - Preheat oven to 400 degrees
   - Grease a mini muffin tin
