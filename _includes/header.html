@@ -16,7 +16,7 @@
   </div>
   <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
     {% for tab in site.tabs %}
-      <a href="{{ tab.link }}" class="mdl-layout__tab{% if page.title == tab.title %} is-active{% endif %}">{{ tab.title }}</a>
+      <a href="{{ site.url }}/{{ tab.link }}" class="mdl-layout__tab{% if page.title == tab.title %} is-active{% endif %}">{{ tab.title }}</a>
     {% endfor %}
   </div>
 </header>
