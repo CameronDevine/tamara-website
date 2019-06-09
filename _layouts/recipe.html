@@ -27,3 +27,7 @@ layout: post
     </li>
   {% endfor %}
 </ul>
+
+{% if page.source %}
+  <p>Adapted from: <a href="{{ page.source }}">{{ page.source }}</a></p>
+{% endif %}
