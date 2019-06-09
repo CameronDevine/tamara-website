@@ -1,9 +1,14 @@
 
-<header class="mdl-layout__header">
-  <div class="mdl-layout__header-row">
+<header class="mdl-layout__header mdl-layout__header--transparent">
+  <div class="mdl-layout__header-row" style="padding-left: 16px;"">
     <span class="mdl-layout-title">{{ site.title }}</span>
+    <div class="mdl-layout-spacer"></div>
+    <nav class="mdl-navigation">
+      {% for tab in site.tabs %}
+        <a class="mdl-navigation__link" href="{{ site.url }}/{{ tab.link }}">{{ tab.title }}</a>
+      {% endfor %}
+    </nav>
     {% if page.search %}
-      <div class="mdl-layout-spacer"></div>
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
         <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
           <i class="material-icons">search</i>
@@ -13,10 +18,5 @@
         </div>
       </div>
     {% endif %}
-  </div>
-  <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-    {% for tab in site.tabs %}
-      <a href="{{ site.url }}/{{ tab.link }}" class="mdl-layout__tab{% if page.title == tab.title %} is-active{% endif %}">{{ tab.title }}</a>
-    {% endfor %}
   </div>
 </header>
