@@ -16,6 +16,10 @@ fields:
   description: Recipe title
   config:
     required: true
+- type: text
+  name: source
+  label: Source
+  description: Add a URL to cite the original recipe
 - type: list
   name: ingredients
   label: Ingredients
