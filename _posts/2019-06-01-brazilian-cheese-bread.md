@@ -2,6 +2,7 @@
 layout: recipe
 title: Brazilian Cheese Bread
 source: https://www.simplyrecipes.com/recipes/easy_brazilian_cheese_bread/
+image: cheese-bread.jpg
 ingredients:
   - 1 large egg
   - 1/3 cup of olive oil

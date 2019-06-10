@@ -16,6 +16,15 @@ fields:
   description: Recipe title
   config:
     required: true
+- type: file
+  name: image
+  label: Image
+  description: Recipe image
+- type: boolean
+  name: white_title
+  label: White Title
+  description: Use white text when placing a title on top of of the image.
+  default: false
 - type: text
   name: source
   label: Source

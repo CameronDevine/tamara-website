@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: Mustard Substitute
+image: mustard.jpg
 ingredients:
   - 4 tablespoons of tahini
   - 3 tablespoons of white vinegar
