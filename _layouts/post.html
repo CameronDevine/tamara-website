@@ -4,8 +4,11 @@ layout: default
 
 <div class="mdl-grid" style="max-width:12in">
   <div class="mdl-cell mdl-cell--2-col"></div>
-  <div class="mdl-cell mdl-cell--8-col mdl-shadow--4dp" style="padding: 80px 56px; background: rgba(255, 255, 255, 0.92);">
-    <h3 style="text-align:center">{{ page.title }}</h3>
+  <!--<div class="mdl-cell mdl-cell--8-col mdl-shadow--4dp" style="padding: 80px 56px; background: rgba(255, 255, 255, 0.92);">-->
+  <div class="mdl-card mdl-cell mdl-cell--8-col mdl-shadow--4dp" style="background: rgba(255, 255, 255, 0.92);">
+    <div class="mdl-card__title" style="{% if page.image %} height: 280px; background: url('{{ site.url }}/images/{{ page.image }}') center / cover; {% endif %} {% if page.white_title %} color: #fff; {% endif %}">
+      <h2 class="mdl-card__title-text" style="font-size: 40px;">{{ page.title }}</h2>
+    </div>
     {{ content }}
   </div>
 </div>

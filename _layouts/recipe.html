@@ -2,32 +2,42 @@
 layout: post
 ---
 
-{{ content }}
+<div class="mdl-card__supporting-text mdl-card--border" style="width: 100%; padding: 0;">
+  <div style="margin: 80px 56px 20px 56px;">
+    {{ content }}
+  </div>
+</div>
 
-<h5>Ingredients</h5>
+<div class="mdl-card__supporting-text" style="width: 100%; padding: 0;">
+  <div style="margin: 20px 56px 80px 56px;">
 
-<ul class="mdl-list">
-  {% for ingredient in page.ingredients %}
-    <li class="mdl-list__item">
-      <span class="mdl-list__item-primary">
-        {{ ingredient }}
-      </span>
-    </li>
-  {% endfor %}
-</ul>
+    <h5>Ingredients</h5>
 
-<h5>Instructions</h5>
+    <ul class="mdl-list">
+      {% for ingredient in page.ingredients %}
+        <li class="mdl-list__item">
+          <span class="mdl-list__item-primary">
+            {{ ingredient }}
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
 
-<ul class="mdl-list">
-  {% for instruction in page.instructions %}
-    <li class="mdl-list__item">
-      <span class="mdl-list__item-primary">
-        {{ forloop.index }}. {{ instruction }}
-      </span>
-    </li>
-  {% endfor %}
-</ul>
+    <h5>Instructions</h5>
 
-{% if page.source %}
-  <p>Adapted from: <a href="{{ page.source }}">{{ page.source }}</a></p>
-{% endif %}
+    <ul class="mdl-list">
+      {% for instruction in page.instructions %}
+        <li class="mdl-list__item">
+          <span class="mdl-list__item-primary">
+            {{ forloop.index }}. {{ instruction }}
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
+
+    {% if page.source %}
+      <p>Adapted from: <a href="{{ page.source }}">{{ page.source }}</a></p>
+    {% endif %}
+
+  </div>
+</div>
