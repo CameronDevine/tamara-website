@@ -49,5 +49,6 @@ fields:
   config:
     required: true
 pages:
+- _posts/2019-06-01-biscuits.md
 - _posts/2019-06-01-bbq-sauce.md
 - _posts/2019-06-02-waffles.md
