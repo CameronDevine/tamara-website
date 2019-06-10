@@ -49,6 +49,7 @@ fields:
   config:
     required: true
 pages:
+- _posts/2019-06-01-mustard-substitute.md
 - _posts/2019-06-01-brazilian-cheese-bread.md
 - _posts/2019-06-01-biscuits.md
 - _posts/2019-06-01-bbq-sauce.md
