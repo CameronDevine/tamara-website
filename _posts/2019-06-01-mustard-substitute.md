@@ -16,4 +16,14 @@ white_title: false
 source: ''
 
 ---
-Sometimes Tamara likes to have things which typically are made with mustard. Because of this we came up with this substitute. While it isn't perfect it is better than nothing. Horseradish can also be added to mimic Dijon mustard.
+Mustard- that yellow stuff that is Biblically refereed to in faith applications. However, I like to put it on my chicken hot dogs. 
+
+This recipe was developed by Cameron when I pouted because I couldn't eat a chicken hot dog without mustard, because honestly, that really is blasphemy. 
+
+I can't complain much- it's yellow. It sort of smells like mustard and as long as it is with all of my other condiments on my food, it basically tastes like mustard. 
+
+I cannot, and will not lie to though- this is not mustard. If you have a mustard allergy or intolerance and have previously tried mustard, this is an amazing substitution. My only critique is that it is a little vinegary, which I don't like as much and that it gets crusty in the fridge and needs to be stirred. These are very small things that I can live with for the ability to have something very close to what mustard was like. 
+
+You can also alter ingredients to fit your needs and tastes! Have fun with it! 
+
+Horseradish can also be added to mimic Dijon mustard.
