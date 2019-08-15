@@ -1,46 +1,30 @@
 ---
-label: Recipe
+label: Blog
 hide_body: false
 fields:
 - type: text
   name: layout
   label: Layout
   hidden: true
-  default: recipe
+  default: blog
   config:
     required: true
   description: Layout to use
 - type: text
   name: title
   label: Title
-  description: Recipe title
+  description: Blog post title
   config:
     required: true
 - type: file
   name: image
   label: Image
-  description: Recipe image
+  description: Blog post image
 - type: boolean
   name: white_title
   label: White Title
   description: Use white text when placing a title on top of of the image.
   default: false
-- type: text
-  name: source
-  label: Source
-  description: Add a URL to cite the original recipe
-- type: list
-  name: ingredients
-  label: Ingredients
-  description: Recipe ingredients
-- type: list
-  name: instructions
-  label: Instructions
-  description: Recipe instructions
-  config:
-    use_select: false
-    source:
-      type: simple
 - type: list
   name: related
   label: Related Posts
@@ -57,8 +41,4 @@ fields:
   config:
     required: true
 pages:
-- _posts/2019-06-01-mustard-substitute.md
-- _posts/2019-06-01-biscuits.md
-- _posts/2019-06-01-brazilian-cheese-bread.md
-- _posts/2019-06-02-waffles.md
-- _posts/2019-06-01-bbq-sauce.md
+- _posts/2019-08-14-test-blog.md
