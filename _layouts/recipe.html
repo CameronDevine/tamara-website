@@ -35,7 +35,7 @@ layout: post
       {% endfor %}
     </ul>
 
-    {% if page.source %}
+    {% if page.source and page.source != '' %}
       <p>Adapted from: <a href="{{ page.source }}">{{ page.source }}</a></p>
     {% endif %}
 

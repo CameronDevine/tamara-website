@@ -14,8 +14,12 @@ instructions:
 date: 2019-06-02T04:15:00.000+00:00
 white_title: false
 source: ''
+related:
+  - Brazilian Cheese Bread
+  - Biscuits
 
 ---
+<<<<<<< HEAD
 Mustard- that yellow stuff that is Biblically refereed to in faith applications. However, I like to put it on my chicken hot dogs. 
 
 This recipe was developed by Cameron when I pouted because I couldn't eat a chicken hot dog without mustard, because honestly, that really is blasphemy. 
@@ -27,3 +31,6 @@ I cannot, and will not lie to though- this is not mustard. If you have a mustard
 You can also alter ingredients to fit your needs and tastes! Have fun with it! 
 
 Horseradish can also be added to mimic Dijon mustard.
+=======
+Sometimes Tamara likes to have things which typically are made with mustard. Because of this we came up with this substitute. While it isn't perfect it is better than nothing. Horseradish can also be added to mimic Dijon mustard.
+>>>>>>> blog

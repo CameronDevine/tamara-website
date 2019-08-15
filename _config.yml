@@ -12,5 +12,7 @@ tabs:
     link: ""
   - title: Recipies
     link: recipies.html
+  - title: Blog
+    layout: blog
 
 markdown: kramdown
