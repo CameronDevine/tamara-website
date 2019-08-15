@@ -3,7 +3,7 @@ layout: default
 title: Recipies
 ---
 
-{% assign sortedPosts = site.posts | sort: 'title' %}
+{% assign sortedPosts = site.posts | where: 'layout', 'recipe' | sort: 'title' %}
 
 <div class="mdl-grid" style="max-width:10in">
   {% for post in sortedPosts %}
