@@ -14,6 +14,9 @@ instructions:
 date: 2019-06-02T04:15:00.000+00:00
 white_title: false
 source: ''
+related:
+  - Brazilian Cheese Bread
+  - Biscuits
 
 ---
 Sometimes Tamara likes to have things which typically are made with mustard. Because of this we came up with this substitute. While it isn't perfect it is better than nothing. Horseradish can also be added to mimic Dijon mustard.
