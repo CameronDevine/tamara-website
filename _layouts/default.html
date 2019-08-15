@@ -5,7 +5,9 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" style="background: url('{{ site.url }}/images/background.jpg') center / cover;">
       {%- include header.html -%}
       <main class="mdl-layout__content">
-        {{ content }}
+        <div id="content">
+          {{ content }}
+        </div>
         {%- include footer.html -%}
       </main>
     </div>
