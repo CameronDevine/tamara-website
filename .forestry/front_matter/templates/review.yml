@@ -1,0 +1,48 @@
+---
+label: Review
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: review
+  config:
+    required: true
+  description: Layout to use
+- type: text
+  name: title
+  label: Title
+  description: Review title
+  config:
+    required: true
+- type: file
+  name: image
+  label: Image
+  description: Review image
+- type: boolean
+  name: white_title
+  label: White Title
+  description: Use white text when placing a title on top of of the image.
+  default: false
+- type: number
+  name: stars
+  label: Stars
+  description: The number of stars to display on the review
+- type: list
+  name: related
+  label: Related Posts
+  description: Titles of related posts to show
+  config:
+    use_select: false
+    source:
+      type: simple
+- type: datetime
+  name: date
+  label: Date
+  default: now
+  hidden: false
+  config:
+    required: true
+pages:
+- _posts/2019-08-18-test-review.md

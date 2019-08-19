@@ -12,6 +12,8 @@ tabs:
     link: ""
   - title: Recipies
     link: recipies.html
+  - title: Resturants
+    link: reviews.html
   - title: Blog
     layout: blog
 

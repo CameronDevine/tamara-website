@@ -1,0 +1,14 @@
+---
+layout: post
+---
+
+<div class="mdl-card__supporting-text mdl-card--border" style="width: 100%; padding: 0;">
+  <div style="margin: 40px 56px 20px 56px;">
+    <div style="padding-bottom: 16px;">
+      {% for i in (1..page.stars) %}
+        <i class="material-icons" style="color: #D4AF37;">star</i>
+      {% endfor %}
+    </div>
+    {{ content }}
+  </div>
+</div>
