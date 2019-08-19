@@ -1,5 +1,5 @@
 <header class="mdl-layout__header mdl-layout__header--transparent">
-  <div class="mdl-layout__header-row" style="padding-left: 16px;">
+  <div class="mdl-layout__header-row">
     <span class="mdl-layout-title" onclick="window.location.href = '{{ site.url }}'">{{ site.title }}</span>
     <div class="mdl-layout-spacer"></div>
     <nav class="mdl-navigation">
@@ -24,3 +24,16 @@
     {% endif %}
   </div>
 </header>
+<div class="mdl-layout__drawer" style="background: rgba(255, 255, 255, 0.92);">
+  <span class="mdl-layout-title">Contents</span>
+  <nav class="mdl-navigation">
+    {% for tab in site.tabs %}
+      {% if tab.link %}
+        <a class="mdl-navigation__link" href="{{ site.url }}/{{ tab.link }}">{{ tab.title }}</a>
+      {% elsif tab.layout %}
+        {% assign latest = site.posts | where: 'layout': tab.layout | first %}
+        <a class="mdl-navigation__link" href="{{ latest.url }}">{{ tab.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+</div>
